@@ -1,1 +1,2 @@
-# Heart-Disease-Prediction
+# <p align="center">Heart-Disease-Prediction</p>
+
