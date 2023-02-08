@@ -4,3 +4,4 @@
 
 <b>Aims and Objectives: - </b>The aim of a heart disease prediction project would be to develop four different model  that can accurately predict the risk of heart disease in patients based on their characteristics and medical history. This prediction can be used to identify those patients who are at high risk of developing heart disease and can be prevent by reducing the risks.
 The ultimate goal of this project is to analyse the difference between the algorithms that can predict more accurate results with which this can improve the prevention and management of heart disease, which is a leading cause of death and disability worldwide.
+1.	Tools and technologies that will be used to build this project is R programming.
