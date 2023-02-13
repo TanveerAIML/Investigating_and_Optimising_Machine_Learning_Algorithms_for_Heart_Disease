@@ -7,7 +7,7 @@ The ultimate goal of this project is to analyse the difference between the algor
 1.	Tools and technologies that will be used to build this project is R programming.
 2.	Machine Learning Model that will be used in this project are: -	<b>Linear Regression, Neural Network, Support Vector, Naïve Bayes</b>
 
-<b>Background Sources: - </b>Heart disease is a leading cause of death and disability worldwide, and it can affect people of all ages. Heart disease is also known as cardiovascular disease. It is a term used to describe a range of conditions that affect the heart and blood vessels. Risk factors for heart disease include high blood pressure, high cholesterol, diabetes, obesity, smoking, and a sedentary lifestyle.
+<b>Background Sources: - </b>Heart disease is a leading cause of death and disability worldwide, and it can affect people of all ages. Heart disease is also known as cardiovascular disease. It is a term used to describe a range of conditions that affect the heart and blood vessels. Risk factors for heart disease include high blood pressure, high cholesterol, diabetes, obesity, smoking, and a sedentary lifestyle.<br>
 There are several signs and symptoms that can cause a heart attack like:
 1.	Chest pain which is the most common symptom of a heart attack, and it may feel like a squeezing, pressure, or pain in the center of the chest.
 2.	Some people may experience discomfort or pain in the arms, neck, jaw, or back during a heart attack.
