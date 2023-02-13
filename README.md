@@ -6,3 +6,5 @@
 The ultimate goal of this project is to analyse the difference between the algorithms that can predict more accurate results with which this can improve the prevention and management of heart disease, which is a leading cause of death and disability worldwide.
 1.	Tools and technologies that will be used to build this project is R programming.
 2.	Machine Learning Model that will be used in this project are: -	<b>Linear Regression, Neural Network, Support Vector, Naïve Bayes</b>
+
+<b>Background Sources: - </b>Heart disease is a leading cause of death and disability worldwide, and it can affect people of all ages. Heart disease is also known as cardiovascular disease. It is a term used to describe a range of conditions that affect the heart and blood vessels. Risk factors for heart disease include high blood pressure, high cholesterol, diabetes, obesity, smoking, and a sedentary lifestyle
