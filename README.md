@@ -16,3 +16,5 @@ There are several signs and symptoms that can cause a heart attack like:
 5.	During the heart attack people start feeling dizzy or lightheaded.
 
 Before development of this project I had researched about some similar project, I found the most of the individuals had developed the heart disease prediction but they had used only one algorithm to trained the classifier however I am using four different machine learning algorithms, also I will find the accuracy which algorithms works faster, this functionality make my project different from others. 
+
+<b>Approach: -</b>
