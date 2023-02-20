@@ -21,3 +21,4 @@ Before development of this project I had researched about some similar project, 
 Steps to achieve the goal:-
 1. Gathering information related to heart disease on patients and collecting dataset which may come from electronic health records, clinical trials or population-based studies. Create the tasks that is to clean and pre-process the data to ensure that it is suitable for analysis.
 2.	Explore the data to gain a better understanding. This may involve visualizing the data using plots and charts.
+3.	Use machine learning techniques to test and train the data to develop 4 different model on Linear regression, Neural Network, Support Vector and Naïve Bayes. Compare the algorithms to analyse which algorithm can predict more accurately on heart disease.
