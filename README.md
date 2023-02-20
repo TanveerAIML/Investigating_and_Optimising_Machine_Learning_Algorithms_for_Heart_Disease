@@ -20,3 +20,4 @@ Before development of this project I had researched about some similar project, 
 <b>Approach: -</b>This project goes with RAD methodology because this project can be developed faster and of higher quality. Each phase this project brings highest priority functionality and changes are flexible during development.<br><br>
 Steps to achieve the goal:-
 1. Gathering information related to heart disease on patients and collecting dataset which may come from electronic health records, clinical trials or population-based studies. Create the tasks that is to clean and pre-process the data to ensure that it is suitable for analysis.
+2.	Explore the data to gain a better understanding. This may involve visualizing the data using plots and charts.
