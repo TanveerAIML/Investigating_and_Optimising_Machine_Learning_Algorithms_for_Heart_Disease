@@ -24,4 +24,5 @@ Steps to achieve the goal:-
 3. Use machine learning techniques to test and train the data to develop 4 different model on Linear regression, Neural Network, Support Vector and Naïve Bayes. Compare the algorithms to analyse which algorithm can predict more accurately on heart disease.
 4. Based on the results, need to refine and improve the model by adjusting the algorithm or by adding additional data. Repeat this process until the developed model will meets the specific goals. 
 
-<b>Evaluation: -<b>
+<b>Evaluation: -<b>In order to receive feedback, this project will run towards the different groups of people
+with different age gaps between them.
