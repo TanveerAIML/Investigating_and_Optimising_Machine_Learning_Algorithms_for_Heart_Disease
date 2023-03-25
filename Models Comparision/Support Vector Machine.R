@@ -59,42 +59,14 @@ tune_result <- tune(svm,
                     tunecontrol = tune.control(sampling = "cross",
                                                cross = 5))
 # Confusion Matrix
-training[["target"]] = factor(training[["target"]])
-
 model <- tune_result$best.model
 
-testing[["target"]] <- factor(testing[["target"]])
-levels(testing$target) <- levels(training$target)
 prediction <- predict(model, newdata = testing)
+
+levels <- c("0", "1")
+prediction <- factor(ifelse(prediction > 0.5, 1, 0), levels = levels)
+testing$target <- factor(testing$target, levels = levels)
 
 confusionMatrix(prediction, testing$target)
 
 
-
-
-
-# Adding Patient's Details
-
-#new_data <- data.frame(age = 58, 
-#                      sex = 0, 
-#                     cp = 0, 
-#                    trestbps = 100, 
-#                   chol = 248, 
-#                  fbs = 0, 
-#                 restecg = 0, 
-#                thalach = 122, 
-#               exang = 0, 
-#              oldpeak = 4.0, 
-#             slope = 1, 
-#            ca = 0, 
-#           thal = 2)
-
-#prediction <- predict(model, new_data)
-
-#if (new_prediction > 0.50) {
-# print("True")
-#cat(new_prediction)
-#} else {
-# print("False")
-#cat(new_prediction)
-#}
