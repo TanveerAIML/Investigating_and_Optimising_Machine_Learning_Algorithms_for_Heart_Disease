@@ -52,7 +52,7 @@ folds <- createFolds(y = training$target, k = 5, list = TRUE, returnTrain = TRUE
 
 # Train linear regression model using cross-validation
 model <- train(target ~ ., data = training, method = "lm",
-               trControl = trainControl(method = "cv", number = 5, index = folds))
+               trControl = trainControl(method = "cv", number = 10, index = folds))
 
 # Make predictions on test data
 prediction <- predict(model, testing)
@@ -64,3 +64,15 @@ testing$target <- factor(testing$target, levels = levels)
 
 conf_mat <- confusionMatrix(prediction, testing$target)
 conf_mat
+
+Accuracy <- conf_mat$overall['Accuracy']
+Accuracy
+
+f1_score <- conf_mat$byClass['F1']
+f1_score
+
+recall <- conf_mat$byClass['Recall']
+recall
+
+precision <- conf_mat$byClass['Precision']
+precision

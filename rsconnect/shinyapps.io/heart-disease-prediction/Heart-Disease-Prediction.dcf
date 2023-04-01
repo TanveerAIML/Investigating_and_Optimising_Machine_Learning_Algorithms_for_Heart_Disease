@@ -1,0 +1,13 @@
+name: Heart-Disease-Prediction
+title: Heart-Disease-Prediction
+username:
+account: heart-disease-prediction
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8688193
+bundleId: 7014971
+url: https://heart-disease-prediction.shinyapps.io/Heart-Disease-Prediction/
+when: 1679944601.44864
+lastSyncTime: 1679944601.44865
+asMultiple: FALSE
+asStatic: FALSE

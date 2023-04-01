@@ -5,10 +5,13 @@ library(ggplot2)
 library(caret)
 library(e1071)
 library(xgboost)
+library(rsconnect)
+library(testthat)
+
 
 # Loading Data"
-data <- read.csv("www/heart.csv", sep = ",")
-data1 <- read.csv("www/heart.csv", sep = ",")
+data <- read.csv("C:\\Work Profession\\University Files\\Year 3\\Final Year Project\\Heart-Disease-Prediction\\www\\heart.csv", sep = ",")
+data1 <- read.csv("C:\\Work Profession\\University Files\\Year 3\\Final Year Project\\Heart-Disease-Prediction\\www\\heart.csv", sep = ",")
 
 
 # Setting target variables categorical
@@ -115,9 +118,9 @@ function(input, output) {
       paste("Please input all values")
     }else{
       if(prediction_svm > 0.50){
-        cat("SVM Model:",prediction_svm,"\nPatient is at risk of heart disease\n\n")
+        cat("SVM Model:",prediction_svm,"\nHigh Risk\nBased on the given details patient is at risk of heart disease\n\n")
       }else{
-        cat("SVM Model:",prediction_svm,"\nPatient is not at risk of heart disease\n\n")
+        cat("SVM Model:",prediction_svm,"\nLow Risk\nBased on the given details patient is not at risk of heart disease\n\n")
       }
     }
     
@@ -128,9 +131,9 @@ function(input, output) {
       paste("Please input all values")
     }else{
       if(prediction_xg > 0.50){
-        cat("XGBoost Model:",prediction_xg,"\nPatient is at risk of heart disease\n\n")
+        cat("XGBoost Model:",prediction_xg,"\nHigh Risk\nBased on the given details patient is at risk of heart disease\n\n")
       }else{
-        cat("XGBoost Model:",prediction_xg,"\nPatient is not at risk of heart disease\n\n")
+        cat("XGBoost Model:",prediction_xg,"\nLow Risk\nBased on the given details patient is not at risk of heart disease\n\n")
       }
     }
     
@@ -141,9 +144,9 @@ function(input, output) {
       paste("Please input all values")
     }else{
       if(prediction_lm > 0.50){
-        cat("Linear Regression Model:",prediction_lm,"\nPatient is at risk of heart disease\n\n")
+        cat("Linear Regression Model:",prediction_lm,"\nHigh Risk\nBased on the given details patient is at risk of heart disease\n\n")
       }else{
-        cat("Linear Regression Model:",prediction_lm,"\nPatient is not at risk of heart disease\n\n")
+        cat("Linear Regression Model:",prediction_lm,"\nBased on the given details patient is not at risk of heart disease\n\n")
       }
     }
   })
@@ -165,17 +168,17 @@ function(input, output) {
     #}
   #})
   
-  output$svm_accuracy <- renderPrint({
+#  output$svm_accuracy <- renderPrint({
     
-    predict_acc <- predict(model_svm_acc, newdata = test)
-    print(confusionMatrix(table(predict_acc, test$target)))
-  })
+#    predict_acc <- predict(model_svm_acc, newdata = test)
+ #   print(confusionMatrix(table(predict_acc, test$target)))
+  #})
   
-  output$xg_accuracy <- renderPrint({
+#  output$xg_accuracy <- renderPrint({
     
     
-    print(confusionMatrix(prediction_acc, testing_acc$target))
-  })
+ #   print(confusionMatrix(prediction_acc, testing_acc$target))
+  #})
   
   
   # Tab 3
@@ -309,5 +312,10 @@ function(input, output) {
 }
 
 
+
+
+#testServer(server, {
+ # session$
+#})
 
 

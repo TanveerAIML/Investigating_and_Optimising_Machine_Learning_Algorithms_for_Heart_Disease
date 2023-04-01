@@ -54,12 +54,14 @@ param_grid <- expand.grid(
   cp = seq(0.01, 0.5, by = 0.01)
 )
 
+cv <- trainControl(method = "cv", number = 10)
+
 # Train model with cross-validation and hyperparameter tuning
 rpart_model <- train(
   x = training[, -14], # exclude target column
   y = training$target,
   method = "rpart",
-  trControl = trainControl(method = "cv", number = 5),
+  trControl = cv,
   tuneGrid = param_grid
 )
 

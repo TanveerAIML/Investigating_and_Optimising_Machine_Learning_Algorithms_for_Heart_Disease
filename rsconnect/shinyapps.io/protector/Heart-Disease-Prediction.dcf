@@ -1,0 +1,14 @@
+name: Heart-Disease-Prediction
+title: Heart-Disease-Prediction
+username:
+account: protector
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8688539
+bundleId: 7015088
+url: https://protector.shinyapps.io/Heart-Disease-Prediction/
+when: 1679946766.3713
+lastSyncTime: 1679946766.37131
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Models Comparision/Decision Tree.R|Models Comparision/Linear Regression.R|Models Comparision/Naive Bayes.R|Models Comparision/Support Vector Machine.R|Models Comparision/XGBoost.R|README.md

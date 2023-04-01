@@ -60,12 +60,14 @@ param_grid <- expand.grid(
   subsample = 0.5
 )
 
+cv <- trainControl(method = "cv", number = 10)
+
 # Train model with hyperparameter tuning
 xgb_model <- train(
   x = as.matrix(training[,-c(14)]),
   y = training$target,
   method = "xgbTree",
-  trControl = trainControl(method = "cv", number = 5),
+  trControl = cv,
   tuneGrid = param_grid,
   objective = "binary:logistic"
 )

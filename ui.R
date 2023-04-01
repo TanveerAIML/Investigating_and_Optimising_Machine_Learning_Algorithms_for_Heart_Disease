@@ -1,5 +1,11 @@
 # Adding Relevant Library
 library(shiny)
+library(htmlwidgets)
+library(ggplot2)
+library(caret)
+library(e1071)
+library(xgboost)
+library(rsconnect)
 
 
 # Define UI for application that draws a histogram
@@ -346,28 +352,28 @@ fluidPage(
                         )
                         
                       ),
-                      hr(),
+                     # hr(),
                       
-                fluidRow(column(3,
+               # fluidRow(column(3,
                               
-                                h3("SVM Accuracy:-"),
-                                verbatimTextOutput("svm_accuracy")
+                #                h3("SVM Accuracy:-"),
+                 #               verbatimTextOutput("svm_accuracy")
                                               
-                        ),
+                  #      ),
                         
-                        column(3,
+                       # column(3,
                         
-                               h3("XGBoost Accuracy:-"),
-                               verbatimTextOutput("xg_accuracy")
-                        ),
+                        #       h3("XGBoost Accuracy:-"),
+                         #      verbatimTextOutput("xg_accuracy")
+                        #),
                         
-                        column(3,
+                       # column(3,
                         
-                               h3("Linear Regression:-"),
-                               verbatimTextOutput("lm_accuracy")
-                        )
+                        #       h3("Linear Regression:-"),
+                         #      verbatimTextOutput("lm_accuracy")
+                        #)
                         
-                )
+               # )
                       
                       
                   )

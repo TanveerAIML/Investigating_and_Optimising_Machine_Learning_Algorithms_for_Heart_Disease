@@ -33,6 +33,9 @@ precision
 
 
 
+
+
+
 # Using Hyperparameter Tuning
 # Read Data
 data <- read.csv("C:\\Work Profession\\University Files\\Year 3\\Final Year Project\\Heart-Disease-Prediction\\www\\heart.csv", sep = ",")
@@ -47,14 +50,15 @@ testing <- data[-train_index,]
 param_grid <- expand.grid(C = c(0.1, 1, 10, 100),
                           gamma = c(0.01, 0.1, 1, 10))
 
+cv <- tune.control(sampling = "cross", cross = 10)
+
 # performing grid search
 tune_result <- tune(svm,
                     target ~.,
                     data = training,
                     kernel = "radial",
                     ranges = param_grid,
-                    tunecontrol = tune.control(sampling = "cross",
-                                               cross = 5))
+                    tunecontrol = cv)
 
 model <- tune_result$best.model
 
